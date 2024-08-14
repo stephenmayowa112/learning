@@ -29,7 +29,7 @@ const ContentWrapper = styled.div`
 const Title = styled.h1`
   font-size: 3rem;
   margin-bottom: 1rem;
-  background-image: url('/path-to-your-colorful-title-image.png');
+  background-image: url('/image.png');
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -44,7 +44,7 @@ const Subtitle = styled.p`
 `;
 
 const Image = styled.img`
-  max-width: 40%;
+  max-width: 55%;
   height: auto;
 
   @media (max-width: 768px) {
@@ -63,7 +63,7 @@ const HeroSection = () => {
         </Subtitle>
         <Button primary>Get Started →</Button>
       </ContentWrapper>
-      <Image src="/path-to-your-hero-image.png" alt="Student with books" />
+      <Image src="/girl_1.png" alt="Student with books" />
     </HeroContainer>
   );
 };

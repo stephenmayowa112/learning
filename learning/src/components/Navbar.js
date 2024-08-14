@@ -22,8 +22,15 @@ const ButtonGroup = styled.div`
   display: flex;
   gap: 15px;
 `;
+const ThemeToggle = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 15px;
+`;
 
-const Navbar = () => {
+const Navbar = ({ onThemeToggle }) => {
   return (
     <NavbarContainer>
       <Logo />
@@ -33,11 +40,14 @@ const Navbar = () => {
         <NavLink href="/product">Product</NavLink>
       </NavLinks>
       <ButtonGroup>
-        <Button primary onClick={() => console.log('Log in clicked')}>Log in</Button>
-        <Button  onClick={() => console.log('Enroll Now clicked')}>Enroll Now</Button>
+        <Button onClick={() => console.log('Log in clicked')}>Log in</Button>
+        <Button primary onClick={() => console.log('Enroll Now clicked')}>Enroll Now</Button>
+        <ThemeToggle onClick={onThemeToggle}>
+          
+          🌓
+        </ThemeToggle>
       </ButtonGroup>
     </NavbarContainer>
   );
 };
-
 export default Navbar;
