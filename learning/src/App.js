@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
+import Feature from './components/Feature';
 
 const lightTheme = {
   backgroundColor: '#ffffff',
@@ -36,6 +37,7 @@ function App() {
       <AppContainer>
         <Navbar onThemeToggle={toggleTheme} />
         <HeroSection />
+        <Feature />
         
       </AppContainer>
     </ThemeProvider>
