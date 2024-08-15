@@ -18,7 +18,8 @@ const HeroContainer = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-  max-width: 50%;
+  max-width: 60%;
+  padding-bottom: 10%;
 
   @media (max-width: 768px) {
     max-width: 100%;
@@ -28,7 +29,7 @@ const ContentWrapper = styled.div`
 
 const Title = styled.h1`
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
   background-image: url('/image.png');
   background-clip: text;
   -webkit-background-clip: text;
@@ -38,13 +39,13 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.p`
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
   color: ${props => props.theme.subtitleColor};
 `;
 
 const Image = styled.img`
-  max-width: 55%;
+  max-width: 56%;
   height: auto;
 
   @media (max-width: 768px) {
@@ -61,7 +62,7 @@ const HeroSection = () => {
           Explore courses from our curated authors with professional expertise 
           and industry best practices across a wide range technology fields.
         </Subtitle>
-        <Button primary>Get Started →</Button>
+        <Button size="large" primary>Get Started →</Button>
       </ContentWrapper>
       <Image src="/girl_1.png" alt="Student with books" />
     </HeroContainer>
