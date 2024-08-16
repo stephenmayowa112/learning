@@ -66,7 +66,7 @@ const ExploreTraining = () => {
       <Title>Explore professional training & certifications</Title>
       <CardContainer>
         <Card>
-          <CardImage src="/girl_1.png" alt="Individual learning" />
+          <CardImage src='./Rectangle 4.png' alt="Individual learning" />
           <CardContent>
             <CardTitle>For individuals</CardTitle>
             <CardDescription>
@@ -80,7 +80,7 @@ const ExploreTraining = () => {
           </CardContent>
         </Card>
         <Card>
-          <CardImage src="/girl_1.png" alt="Organization learning" />
+          <CardImage src='./Rectangle 5.png' alt="Organization learning" />
           <CardContent>
             <CardTitle>For Organizations</CardTitle>
             <CardDescription>
