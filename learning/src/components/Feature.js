@@ -6,7 +6,8 @@ import { FaVideo, FaUserGraduate, FaCertificate } from 'react-icons/fa'; // You'
 const FeatureContainer = styled.div`
   background-color: #007bff;
   color: white;
-  padding: 2rem 0;
+  padding: 0.2rem ;
+  margin: 0px 70px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -19,10 +20,11 @@ const FeatureContainer = styled.div`
 
 const FeatureItem = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
+  flex-direction: row;
+  align-items: self-start;
+  text-align: justify;
+  gap: 4rem;
+  padding: 1.2rem 0.2rem;
 
   @media (max-width: 768px) {
     margin-bottom: 1rem;
@@ -43,8 +45,8 @@ const FeatureText = styled.span`
 
 
 const Separator = styled.div`
-  width: 1px;
-  height: 50px;
+  width: 1.8px;
+  height: 80px;
   background-color: white;
 
   @media (max-width: 768px) {

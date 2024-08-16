@@ -4,6 +4,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import Feature from './components/Feature';
+import ExploreTraining from './components/ExploreTraining';
 
 const lightTheme = {
   backgroundColor: '#ffffff',
@@ -38,7 +39,7 @@ function App() {
         <Navbar onThemeToggle={toggleTheme} />
         <HeroSection />
         <Feature />
-        
+        <ExploreTraining />
       </AppContainer>
     </ThemeProvider>
   );
