@@ -5,6 +5,12 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import Feature from './components/Feature';
 import ExploreTraining from './components/ExploreTraining';
+import PopularCourses from './components/PopularCourses';
+import AboutUs from './components/AboutUs';
+import TrendingBlogArticles from './components/TrendingBlogArticles';
+import Newsletter from './components/Newsletter';
+import Footer from './components/Footer';
+
 
 const lightTheme = {
   backgroundColor: '#ffffff',
@@ -40,6 +46,11 @@ function App() {
         <HeroSection />
         <Feature />
         <ExploreTraining />
+        <PopularCourses />
+        <AboutUs />
+        <TrendingBlogArticles />
+        <Newsletter />
+        <Footer />
       </AppContainer>
     </ThemeProvider>
   );
