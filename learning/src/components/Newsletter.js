@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const NewsletterSection = styled.section`
   background-color: #FFF0F5; // Light pink background
-  padding: 3rem 1rem;
+  padding: 5rem 1rem;
   text-align: center;
 `;
 

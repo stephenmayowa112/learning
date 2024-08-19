@@ -2,37 +2,42 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Button from './Button';
+import { CiSearch } from "react-icons/ci";
+
 
 const Section = styled.section`
-  padding: 4rem 2rem;
-  background-color: ${props => props.theme.backgroundColor};
+  padding: 2rem;
+  background-color: #f0f8ff; // Light blue background
 `;
 
 const Title = styled.h2`
   font-size: 2.5rem;
   color: ${props => props.theme.textColor};
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: flex;
 `;
 
 const SearchContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 2rem;
+  
 
   @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
 
+
 const SearchInput = styled.input`
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border: 1px solid ${props => props.theme.borderColor};
+  padding: 1.2rem 1rem;
+  font-size: 1.2rem;
+  border: 3px solid;
+  border-color:#666;
   border-radius: 4px;
-  margin-right: 1rem;
+  margin-right: 2rem;
   flex-grow: 1;
-  max-width: 500px;
+  max-width: 800px;
 
   @media (max-width: 768px) {
     margin-right: 0;
@@ -40,28 +45,43 @@ const SearchInput = styled.input`
   }
 `;
 
-const SearchButton = styled(Button)`
-  padding: 0.5rem 1rem;
+const SearchButton = styled.button`
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size:30px;
+  border-radius: 9px;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px; 
+  
+  &:hover {
+    background-color: #0056b3;
+  }
 `;
 
 const TagContainer = styled.div`
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content:left;
   gap: 1rem;
   margin-bottom: 2rem;
 `;
 
 const Tag = styled.span`
-  background-color: ${props => props.theme.primaryColor};
+  background-color: #007bff;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 20px;
   cursor: pointer;
+  font-size: 0.9rem;
 `;
 
 const CourseGrid = styled.div`
   display: grid;
+  background-color: white;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
@@ -114,6 +134,7 @@ const Certificate = styled.p`
 const ExploreButton = styled(Button)`
   display: block;
   margin: 0 auto;
+  padding: 40px 0px;
 `;
 
 
@@ -150,6 +171,7 @@ const PopularCourses = () => {
 
   return (
     <Section>
+      <>
       <Title>Our Popular Courses</Title>
       <SearchContainer>
         <SearchInput
@@ -158,14 +180,15 @@ const PopularCourses = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <SearchButton primary>
-          <span role="img" aria-label="search">🔍</span>
+        <SearchButton primary >
+          <span  ><CiSearch /></span>
         </SearchButton>
       </SearchContainer>
       <TagContainer>
         <Tag>ArcGIS</Tag>
         <Tag>Technology</Tag>
       </TagContainer>
+      </>
       <CourseGrid>
         {courses.map((course) => (
           <CourseCard key={course.id}>

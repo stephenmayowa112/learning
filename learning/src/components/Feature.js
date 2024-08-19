@@ -50,7 +50,10 @@ const Separator = styled.div`
   background-color: white;
 
   @media (max-width: 768px) {
-    display: none;
+    width: 0.5px;
+    height: 10px;
+    background-color: white;
+    
   }
 `;
 const Feature = () => {

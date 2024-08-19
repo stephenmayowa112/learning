@@ -31,7 +31,7 @@ const StyledButton = styled.button`
   ${props => getSize(props.size)}
   
   ${props => props.primary ? css`
-    background-color: #007bff;
+    background-color: #0468FD;
     color: white;
     border: none;
     
