@@ -50,8 +50,8 @@ const Separator = styled.div`
   background-color: white;
 
   @media (max-width: 768px) {
-    width: 0.5px;
-    height: 10px;
+    width: 200px;
+    height: 6px;
     background-color: white;
     
   }

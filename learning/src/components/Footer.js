@@ -87,6 +87,12 @@ const Copyright = styled.p`
 const SocialIcons = styled.div`
   display: flex;
   gap: 5rem;
+
+ @media (min-width: 768px) {
+        justify-content: center;
+        align-items: center;
+  }
+
 `;
 
 const SocialIcon = styled.a`
@@ -95,6 +101,7 @@ const SocialIcon = styled.a`
   &:hover {
     color: #666;
   }
+ 
 `;
 
 const Footer = () => {

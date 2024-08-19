@@ -12,10 +12,10 @@ const Container = styled.div`
   margin: 0 auto;
 `;
 
-const Title = styled.h2`
+const Title = styled.h3`
   font-size: 2rem;
   color: #333;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 `;
 
 const Form = styled.form`
@@ -31,9 +31,10 @@ const Form = styled.form`
 
 const Input = styled.input`
   width: 100%;
+  height: 50px;
   padding: 0.75rem 1rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1.4px solid  #007bff;
   border-radius: 4px;
   margin-bottom: 1rem;
 
@@ -48,8 +49,8 @@ const Button = styled.button`
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 4px;
-  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  padding: 1.9rem 3.3rem;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;

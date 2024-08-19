@@ -8,9 +8,20 @@ const TrendingSection = styled.section`
   text-align: center;
 `;
 
+const Image = styled.img`
+  max-width: 39%;
+  height: auto;
+  margin-bottom: 0%;
+
+  @media (max-width: 768px) {
+    max-width: 90%;
+  }
+`;
+
+
 const Title = styled.h2`
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 `;
 
 const Subtitle = styled.p`
@@ -94,6 +105,7 @@ const TrendingBlogArticles = () => {
   return (
     <TrendingSection>
       <Title>Trending blog & Articles</Title>
+      <Image src="imgn.png" alt="image" />
       <Subtitle>
         Read blogs and articles within Giseria. We share tips and tricks to get more success
       </Subtitle>
